@@ -1,0 +1,5 @@
+-- init.sql 파일
+CREATE DATABASE IF NOT EXISTS test;
+CREATE USER 'test_user'@'%' IDENTIFIED BY '1234';
+GRANT ALL PRIVILEGES ON test.* TO 'test_user'@'%';
+FLUSH PRIVILEGES;
